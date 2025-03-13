@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js File Server</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1>Welcome to the Node.js File Server</h1>
+    <div class="container">
+        <h1>Welcome to the Node.js File Server</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
